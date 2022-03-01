@@ -1,0 +1,103 @@
+@charset "UTF-8";
+* {
+  font-family: 微軟正黑體;
+  position: relative;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-weight: bold;
+}
+
+header.container-fluid {
+  text-align: center;
+  padding: 130px;
+  background-image: url("https://images.unsplash.com/photo-1622195552280-9e4d17b2a550?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+  background-size: cover;
+  background-position: center center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+}
+header.container-fluid h1 {
+  font-size: 70px;
+}
+
+section {
+  text-align: center;
+  padding: 70px 0px;
+}
+section .section-heading {
+  font-size: 30px;
+  margin-top: 0;
+}
+section .section-subheading {
+  font-size: 16px;
+}
+
+.col-meat {
+  padding: 50px;
+}
+.col-meat img {
+  width: 100%;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.col-meat h4 {
+  font-size: 20px;
+}
+.col-meat h6 {
+  font-size: 14px;
+}
+
+section.location {
+  background-color: #eee;
+}
+section.location .icon-taichung {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+section.trans {
+  padding: 0;
+}
+section.trans .col-md-6 {
+  padding: 150px;
+  color: white;
+  cursor: pointer;
+}
+section.trans .col-md-6 p {
+  opacity: 0.4;
+}
+section.trans .col-md-6:hover p {
+  opacity: 0.7;
+}
+section.trans .col-md-6:hover:before {
+  filter: brightness(0.5);
+  background-size: auto 140%;
+  background-position: 0 center;
+}
+section.trans .col-md-6:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition-duration: 0.5s;
+}
+section.trans .pic1:before {
+  background-image: url(https://i.imgur.com/DzcjguY.jpg);
+  background-size: auto 120%;
+  background-position: 0 center;
+}
+section.trans .pic2:before {
+  background-image: url(https://i.imgur.com/Xn2qIFy.jpg);
+  background-size: auto 120%;
+  background-position: 0 center;
+}
+
+.ask {
+  background-color: #223122;
+  color: white;
+}
